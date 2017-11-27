@@ -87,7 +87,7 @@ class NeuroPy(object):
                 port = "COM6"
             elif platform.startswith("linux") or platform == 'darwin':
                 port = "/dev/rfcomm0"
-
+        #on MacOS use port = "/dev/tty.MindWave" which is the defalult virtual serial port created by Neorosky ThinkGear on MacOS
         self.__devid = devid
         self.__serialPort = port
         self.__serialBaudRate = baudRate
